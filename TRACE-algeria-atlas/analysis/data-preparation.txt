@@ -1,0 +1,23 @@
+
+> trace-earth-system-atlas@2.0.0 data:prepare
+> python scripts/prepare_data.py
+
+{
+  "monthlyRows": 57816,
+  "sourceVariables": 20,
+  "extraLenses": 8,
+  "regions": 6,
+  "sourceSeries": 120,
+  "annualRows": 246,
+  "annualTrendRows": 234,
+  "seasonalTrendRows": 480,
+  "relationshipRows": 42,
+  "duplicates": 0,
+  "annualMeanMaxError": 1.421085472e-14,
+  "slopeMaxError": 3.053113318e-16,
+  "mkMaxError": 2.220446049e-16,
+  "gpmStart": "2001-01",
+  "missingAnnualGPM": 102,
+  "supportRule": "OLS p < 0.05 AND Benjamini\u2013Hochberg-adjusted Mann\u2013Kendall q < 0.05"
+}
+1620 analysis views; 5140 KB browser payload.

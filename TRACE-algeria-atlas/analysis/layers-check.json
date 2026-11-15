@@ -1,0 +1,91 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "browser": "chromium",
+  "checks": [
+    {
+      "name": "six real GeoJSON polygon entities are loaded into Cesium with disclosed 2017 display-only provenance",
+      "passed": true
+    },
+    {
+      "name": "Cesium GPU picking hits the interior of the actual Tamanrasset polygon, away from any label or point",
+      "passed": true
+    },
+    {
+      "name": "hovering an area shows its actual numerical value, a pointer cursor and the display-footprint caveat",
+      "passed": true
+    },
+    {
+      "name": "clicking the polygon interior selects its record and opens the inspector without touching a label",
+      "passed": true
+    },
+    {
+      "name": "an unfilled location does not invent a regional climate readout or select the nearest label",
+      "passed": true
+    },
+    {
+      "name": "dragging the real map changes projected geography and Fit Algeria restores it",
+      "passed": true
+    },
+    {
+      "name": "HEAT_DRYING renders its own named texture on all six areas, with real per-region slopes and matching units",
+      "passed": true
+    },
+    {
+      "name": "HEAT_RAIN renders its own named texture on all six areas, with real per-region slopes and matching units",
+      "passed": true
+    },
+    {
+      "name": "HEAT_DRY_RAIN renders its own named texture on all six areas, with real per-region slopes and matching units",
+      "passed": true
+    },
+    {
+      "name": "RAIN_GAP renders its own named texture on all six areas, with real per-region slopes and matching units",
+      "passed": true
+    },
+    {
+      "name": "CLEAR_SOLAR renders its own named texture on all six areas, with real per-region slopes and matching units",
+      "passed": true
+    },
+    {
+      "name": "HOT_WATER renders its own named texture on all six areas, with real per-region slopes and matching units",
+      "passed": true
+    },
+    {
+      "name": "the six textured layer screenshots are genuinely different rendered map canvases",
+      "passed": true
+    },
+    {
+      "name": "Average and Year quick controls recolor areas with actual frequency/product values, not slopes or scores",
+      "passed": true
+    },
+    {
+      "name": "texture/area/opacity controls change actual materials and visibility while retaining the record values",
+      "passed": true
+    },
+    {
+      "name": "unsupported trends have faded fills and dashed borders; support-only filtering hides the actual polygon too",
+      "passed": true
+    },
+    {
+      "name": "2D and 3D retain the same GPU-pickable geographic display polygons",
+      "passed": true
+    },
+    {
+      "name": "opening/collecting an analysis after an area click keeps the selected record and display-geometry provenance",
+      "passed": true
+    },
+    {
+      "name": "a fresh touch-sized mobile map renders the areas and tapping the polygon selects its record",
+      "passed": true
+    },
+    {
+      "name": "without the Cesium SDK the labelled SVG fallback retains the same selectable, textured administrative areas",
+      "passed": true
+    },
+    {
+      "name": "a missing boundary file shows an explicit warning but never removes the scientific records or invents polygons",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

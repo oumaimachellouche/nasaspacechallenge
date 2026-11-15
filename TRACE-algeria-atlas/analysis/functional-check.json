@@ -1,0 +1,87 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "browser": "chromium",
+  "checks": [
+    {
+      "name": "the real Cesium map occupies at least 80% of the screen, without a fixed sidebar",
+      "passed": true
+    },
+    {
+      "name": "the selected Oran record reproduces the supplied rate, uncertainty rule and q value",
+      "passed": true
+    },
+    {
+      "name": "the clue picker exposes exactly the seven agreed concepts and their beginner labels",
+      "passed": true
+    },
+    {
+      "name": "every curated primary clue changes the mapped quantity; archived choices cannot be selected",
+      "passed": true
+    },
+    {
+      "name": "IMERG automatically uses its actual overlap and complete winters contain 23 values",
+      "passed": true
+    },
+    {
+      "name": "the unified Time lens retains whole-year calculations as well as complete seasons",
+      "passed": true
+    },
+    {
+      "name": "all six two/three-input combinations map actual event frequencies or a physical product difference",
+      "passed": true
+    },
+    {
+      "name": "combination help exposes the real formula, fixed reference and exact threshold table",
+      "passed": true
+    },
+    {
+      "name": "all five analysis types exist simultaneously as independently rendered popup windows",
+      "passed": true
+    },
+    {
+      "name": "following and duplicated/frozen windows keep genuinely independent selections",
+      "passed": true
+    },
+    {
+      "name": "anomalies subtract the stated reference rather than rescaling the observations",
+      "passed": true
+    },
+    {
+      "name": "regional comparison bars include zero and retain each region’s 95% slope interval",
+      "passed": true
+    },
+    {
+      "name": "a climate stripe can inspect its actual year on the map and has a numerical anomaly legend",
+      "passed": true
+    },
+    {
+      "name": "relationship selectors are restricted, and detrending changes the actual paired association",
+      "passed": true
+    },
+    {
+      "name": "a relationship containing IMERG is paired only over 2001–2024",
+      "passed": true
+    },
+    {
+      "name": "collecting chart-specific snapshots prevents exact duplicates and preserves context",
+      "passed": true
+    },
+    {
+      "name": "evidence notes persist locally with a frozen calculation, source hashes and honest units",
+      "passed": true
+    },
+    {
+      "name": "a reload retains the evidence board and reopening a saved card freezes its original selection",
+      "passed": true
+    },
+    {
+      "name": "year playback advances real values and pauses without changing annual logic",
+      "passed": true
+    },
+    {
+      "name": "mobile keeps a map-first viewport and usable chart, Time lens and evidence controls",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

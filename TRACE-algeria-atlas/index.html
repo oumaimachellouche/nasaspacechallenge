@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ed" />
+    <meta
+      name="description"
+      content="TRACE: a map-first investigation of Algeria’s supplied Earth-system records."
+    />
+    <title>TRACE — Field Atlas</title>
+    <link rel="icon" href="/trace.svg" />
+    <script>
+      window.CESIUM_BASE_URL = "/cesium/";
+    </script>
+    <script defer src="/cesium/Cesium.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#fieldMap">Skip to map</a>
+    <div id="startup" role="status">
+      <div class="startup-brand">trace<span>.</span></div>
+      <p>Opening the field atlas…</p>
+      <div class="loading-line"></div>
+    </div>
+    <header class="app-header">
+      <a class="brand" href="/" aria-label="TRACE home"
+        ><svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path
+            d="m4 10 12-6 12 6-12 6-12-6Zm0 7 12 6 12-6M4 24l12 6 12-6"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle cx="16" cy="10" r="1.6" fill="currentColor" /></svg
+        ><strong>trace<span>.</span></strong
+        ><small>EARTH SYSTEM<br />FIELD ATLAS</small></a
+      >
+      <div class="header-location">
+        <span class="status-dot"></span>ALGERIA <span class="slash">/</span>
+        <span>06 REGIONAL RECORDS</span>
+      </div>
+      <div class="header-actions">
+        <button id="timeButton" class="header-time" aria-label="Open time lens">
+          <i data-lucide="calendar-range"></i
+          ><span id="timeSummary">1984—2024</span
+          ><i data-lucide="chevron-down"></i></button
+        ><button id="boardButton" class="board-button">
+          <i data-lucide="layout-grid"></i><span>Evidence board</span
+          ><b id="boardCount">0</b></button
+        ><button
+          id="shareButton"
+          class="icon-button desktop-action"
+          aria-label="Share this view"
+          title="Share this view"
+        >
+          <i data-lucide="link-2"></i></button
+        ><button
+          id="helpButton"
+          class="icon-button"
+          aria-label="Methods and sources"
+          title="Methods and sources"
+        >
+          <i data-lucide="book-open"></i>
+        </button>
+      </div>
+    </header>
+    <main
+      id="fieldMap"
+      class="map-stage"
+      tabindex="-1"
+      aria-label="Interactive map-first field atlas of Algeria"
+    >
+      <div id="cesiumContainer"></div>
+      <div id="fallbackMap" hidden></div>
+      <div id="mapLabels" class="map-labels"></div>
+      <div class="map-wash" aria-hidden="true"></div>
+      <section class="map-heading">
+        <div class="eyebrow">
+          <span class="tiny-rule"></span>FIELD NOTES / 01
+        </div>
+        <h1>Algeria<span>.</span></h1>
+        <p>Follow a signal. Build the evidence.</p>
+        <button
+          id="activeClue"
+          class="active-clue"
+          aria-label="Choose the mapped clue"
+        >
+          <span class="clue-dot"></span
+          ><span
+            ><strong id="activeName">Temperature</strong
+            ><small id="activeContext"
+              >Whole year · change over 10 years</small
+            ></span
+          ><i data-lucide="chevron-down"></i>
+        </button>
+      </section>
+      <nav class="tool-rail" aria-label="Investigation tools">
+        <button
+          data-panel="clues"
+          aria-label="Choose a clue"
+          title="Choose a clue"
+        >
+          <i data-lucide="layers-2"></i><span>Clues</span></button
+        ><button
+          data-panel="combine"
+          aria-label="Combine variables"
+          title="Combine variables"
+        >
+          <i data-lucide="workflow"></i><span>Combine</span><b>6</b>
+        </button>
+        <div class="rail-rule"></div>
+        <button data-panel="time" aria-label="Time lens" title="Time lens">
+          <i data-lucide="calendar-range"></i><span>Time</span></button
+        ><button data-panel="map" aria-label="Map layers" title="Map layers">
+          <i data-lucide="sliders-horizontal"></i><span>Layers</span>
+        </button>
+      </nav>
+      <aside
+        id="toolPanel"
+        class="tool-panel"
+        hidden
+        aria-label="Investigation settings"
+      >
+        <div class="panel-heading">
+          <div>
+            <span class="eyebrow" id="panelEyebrow"
+              >CHOOSE A LINE OF EVIDENCE</span
+            >
+            <h2 id="panelTitle">Clues</h2>
+          </div>
+          <button
+            id="closePanel"
+            class="icon-button"
+            aria-label="Close settings"
+          >
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div id="panelContent" class="panel-content"></div>
+      </aside>
+      <div class="map-tools" aria-label="Camera and map tools">
+        <button id="mapHome" title="Fit Algeria" aria-label="Fit Algeria">
+          <i data-lucide="expand"></i></button
+        ><button id="zoomIn" title="Zoom in" aria-label="Zoom in">
+          <i data-lucide="plus"></i></button
+        ><button id="zoomOut" title="Zoom out" aria-label="Zoom out">
+          <i data-lucide="minus"></i>
+        </button>
+        <div></div>
+        <button
+          id="tiltButton"
+          title="Tilt terrain / top-down"
+          aria-label="Tilt terrain view"
+          aria-pressed="false"
+        >
+          <i data-lucide="mountain"></i></button
+        ><button
+          id="projectionButton"
+          title="Switch 2D / 3D"
+          aria-label="Switch to 2D"
+        >
+          3D</button
+        ><button
+          id="probeButton"
+          title="Inspect geographic context"
+          aria-label="Inspect geographic context"
+          aria-pressed="false"
+        >
+          <i data-lucide="crosshair"></i></button
+        ><button
+          id="measureButton"
+          title="Measure a geodesic distance"
+          aria-label="Measure a distance"
+          aria-pressed="false"
+        >
+          <i data-lucide="ruler"></i></button
+        ><button id="northButton" title="Reset north" aria-label="Reset north">
+          <span id="northNeedle">↑</span><small>N</small>
+        </button>
+      </div>
+      <div id="mapNotice" class="map-notice" hidden role="status"></div>
+      <div id="geoReadout" class="geo-readout" hidden></div>
+      <div id="mapHover" class="map-hover" hidden></div>
+      <section id="mapLegend" class="map-legend" aria-label="Map legend">
+        <div class="legend-heading">
+          <span class="eyebrow">READ THE MAP</span
+          ><button id="legendInfo" aria-label="Explain the mapped layer">
+            <i data-lucide="info"></i>
+          </button>
+        </div>
+        <div
+          id="legendQuantity"
+          class="legend-quantity"
+          aria-label="Mapped quantity"
+        >
+          <button data-map-quantity="trend" aria-pressed="true">Change</button
+          ><button data-map-quantity="mean" aria-pressed="false">Average</button
+          ><button data-map-quantity="value" aria-pressed="false">Year</button>
+        </div>
+        <strong id="legendTitle">Change over 10 years</strong>
+        <div id="legendRamp" class="legend-ramp"></div>
+        <div class="legend-range">
+          <span id="legendMin"></span><small id="legendUnit"></small
+          ><span id="legendMax"></span>
+        </div>
+        <div class="legend-texture">
+          <span id="textureSwatch" aria-hidden="true"></span
+          ><span
+            ><strong id="textureName">Solid regional fill</strong
+            ><small id="textureMeaning"
+              >Texture identifies the lens · color shows the value</small
+            ></span
+          >
+        </div>
+        <p id="legendNote">
+          Wilaya display areas, not verified extraction footprints.
+        </p>
+        <button id="paletteButton" class="palette-button">
+          <i data-lucide="palette"></i>Change palette
+        </button>
+      </section>
+      <aside
+        id="siteInspector"
+        class="site-inspector"
+        hidden
+        aria-label="Selected regional record"
+      ></aside>
+      <nav class="evidence-dock" aria-label="Open an analysis window">
+        <span class="dock-label">OPEN A<br /><b>LINE OF EVIDENCE</b></span
+        ><button data-open-chart="series" title="Time series">
+          <i data-lucide="chart-no-axes-combined"></i
+          ><span>Time series</span></button
+        ><button data-open-chart="cycle" title="Annual cycle">
+          <i data-lucide="circle-gauge"></i><span>Annual cycle</span></button
+        ><button data-open-chart="stripes" title="Climate stripes">
+          <i data-lucide="chart-no-axes-column"></i><span>Stripes</span></button
+        ><button data-open-chart="compare" title="Compare regions">
+          <i data-lucide="git-compare-arrows"></i><span>Compare</span></button
+        ><button data-open-chart="relationships" title="Relationships">
+          <i data-lucide="scatter-chart"></i><span>Relationships</span>
+        </button>
+      </nav>
+      <div
+        id="windowTray"
+        class="window-tray"
+        aria-label="Minimized analysis windows"
+      ></div>
+      <div class="map-status">
+        <span id="terrainStatus">CESIUMJS · OPENING MAP</span
+        ><span id="dataConnection">LOCAL ARCHIVE</span>
+      </div>
+      <button id="footprintNote" class="footprint-note">
+        Wilaya display areas · 2017 snapshot · not extraction footprints
+        <i data-lucide="info"></i>
+      </button>
+    </main>
+    <div id="windowLayer" class="window-layer"></div>
+    <dialog id="infoDialog" class="info-dialog">
+      <div class="dialog-heading">
+        <div>
+          <span id="dialogEyebrow" class="eyebrow">FIELD GUIDE</span>
+          <h2 id="dialogTitle"></h2>
+        </div>
+        <button id="closeDialog" class="icon-button" aria-label="Close dialog">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div id="dialogContent" class="dialog-content"></div>
+    </dialog>
+    <dialog id="boardDialog" class="board-dialog">
+      <div class="dialog-heading">
+        <div>
+          <span class="eyebrow"
+            >YOUR INVESTIGATION / SAVED IN THIS BROWSER</span
+          >
+          <h2>The evidence board<span>.</span></h2>
+        </div>
+        <button
+          id="closeBoard"
+          class="icon-button"
+          aria-label="Close evidence board"
+        >
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="board-toolbar">
+        <p>Collect a chart. Keep its context. Make the connections.</p>
+        <label
+          >Arrange<select id="boardSort" aria-label="Sort evidence">
+            <option value="manual">My order · drag cards</option>
+            <option value="newest">Newest first</option>
+            <option value="region">By region</option>
+            <option value="type">By chart type</option>
+            <option value="variable">By clue</option>
+          </select></label
+        ><button id="exportBoard" class="button button-dark">
+          <i data-lucide="download"></i>Export
+        </button>
+      </div>
+      <div id="boardCards" class="board-cards"></div>
+      <div class="board-footer">
+        <span>Every card is a frozen selection, not a causal conclusion.</span
+        ><button id="clearBoard" class="text-button">Clear board</button>
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

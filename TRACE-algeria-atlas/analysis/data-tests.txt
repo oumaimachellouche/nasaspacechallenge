@@ -1,0 +1,139 @@
+
+> trace-earth-system-atlas@2.1.0 test:data
+> node --test scripts/data.test.mjs scripts/boundary.test.mjs
+
+TAP version 13
+# Subtest: the licensed boundary snapshot is pinned, hashed and explicitly dated, not represented as current legal geography
+ok 1 - the licensed boundary snapshot is pinned, hashed and explicitly dated, not represented as current legal geography
+  ---
+  duration_ms: 4.03963
+  ...
+# Subtest: all six user-approved administrative display areas preserve source coordinates without fabricated extraction footprints
+ok 2 - all six user-approved administrative display areas preserve source coordinates without fabricated extraction footprints
+  ---
+  duration_ms: 7.271396
+  ...
+# Subtest: every display ring closes and every new label location is inside its real wilaya geometry
+ok 3 - every display ring closes and every new label location is inside its real wilaya geometry
+  ---
+  duration_ms: 2.843275
+  ...
+# Subtest: point-in-area picking respects holes and multipart geography, not a radius around a label
+ok 4 - point-in-area picking respects holes and multipart geography, not a radius around a label
+  ---
+  duration_ms: 0.334592
+  ...
+# Subtest: the six named lenses have six distinct texture identities and valid shared palettes
+ok 5 - the six named lenses have six distinct texture identities and valid shared palettes
+  ---
+  duration_ms: 0.730955
+  ...
+# Subtest: texture swatches are separate embedded patterns, not a network image or generated climate raster
+ok 6 - texture swatches are separate embedded patterns, not a network image or generated climate raster
+  ---
+  duration_ms: 0.46266
+  ...
+# Subtest: rainfall disagreement remains zero-centered in all three map quantities and all palette colors are finite
+ok 7 - rainfall disagreement remains zero-centered in all three map quantities and all palette colors are finite
+  ---
+  duration_ms: 1.340131
+  ...
+# Subtest: analysis exports preserve the display-only geometry role and its own provenance hash
+ok 8 - analysis exports preserve the display-only geometry role and its own provenance hash
+  ---
+  duration_ms: 1.044657
+  ...
+# Subtest: payload dimensions and supplied/recomputed distinctions are retained
+ok 9 - payload dimensions and supplied/recomputed distinctions are retained
+  ---
+  duration_ms: 3.01083
+  ...
+# Subtest: distributed source CSVs match their SHA-256 manifest
+ok 10 - distributed source CSVs match their SHA-256 manifest
+  ---
+  duration_ms: 50.156739
+  ...
+# Subtest: every view has a complete ordered record and the stated support rule
+ok 11 - every view has a complete ordered record and the stated support rule
+  ---
+  duration_ms: 74.949293
+  ...
+# Subtest: GPM starts in 2001 and winter uses complete cross-year seasons
+ok 12 - GPM starts in 2001 and winter uses complete cross-year seasons
+  ---
+  duration_ms: 0.762121
+  ...
+# Subtest: physical combined variables reproduce their supplied inputs
+ok 13 - physical combined variables reproduce their supplied inputs
+  ---
+  duration_ms: 14.870359
+  ...
+# Subtest: hot–dry thresholds and strict co-occurrence rules are reproducible
+ok 14 - hot–dry thresholds and strict co-occurrence rules are reproducible
+  ---
+  duration_ms: 36.710573
+  ...
+# Subtest: baselines respect the shorter IMERG coverage
+ok 15 - baselines respect the shorter IMERG coverage
+  ---
+  duration_ms: 0.514021
+  ...
+# Subtest: relationship statistics are descriptive and detrending removes time trends
+ok 16 - relationship statistics are descriptive and detrending removes time trends
+  ---
+  duration_ms: 1.24604
+  ...
+# Subtest: QA variable remains native and is excluded from combined recipes
+ok 17 - QA variable remains native and is excluded from combined recipes
+  ---
+  duration_ms: 1.258507
+  ...
+# Subtest: zero-crossing map domains use a consistent symmetric diverging legend
+ok 18 - zero-crossing map domains use a consistent symmetric diverging legend
+  ---
+  duration_ms: 1.11734
+  ...
+# Subtest: the curated interface contains exactly seven agreed clues and six permitted combinations
+ok 19 - the curated interface contains exactly seven agreed clues and six permitted combinations
+  ---
+  duration_ms: 2.350107
+  ...
+# Subtest: all five new joint-condition diagnostics reproduce their fixed monthly thresholds and event counts
+ok 20 - all five new joint-condition diagnostics reproduce their fixed monthly thresholds and event counts
+  ---
+  duration_ms: 193.286476
+  ...
+# Subtest: the rainfall difference uses only paired 2001–2024 coverage and is not labelled observational bias
+ok 21 - the rainfall difference uses only paired 2001–2024 coverage and is not labelled observational bias
+  ---
+  duration_ms: 3.259793
+  ...
+# Subtest: constant event views retain finite diagnostics and no false trend support
+ok 22 - constant event views retain finite diagnostics and no false trend support
+  ---
+  duration_ms: 9.440449
+  ...
+# Subtest: chart-specific CSVs export the displayed calculation, rather than a substituted annual series
+ok 23 - chart-specific CSVs export the displayed calculation, rather than a substituted annual series
+  ---
+  duration_ms: 13.400823
+  ...
+# Subtest: window/card summaries are specific to the visualization and preserve honest units
+ok 24 - window/card summaries are specific to the visualization and preserve honest units
+  ---
+  duration_ms: 243.697353
+  ...
+# Subtest: constant frequency map domains never invent a negative percentage, and snapshots retain thresholds
+ok 25 - constant frequency map domains never invent a negative percentage, and snapshots retain thresholds
+  ---
+  duration_ms: 1.168376
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1456.000112

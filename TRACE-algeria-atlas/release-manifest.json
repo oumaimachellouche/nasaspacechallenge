@@ -1,0 +1,240 @@
+{
+  "project": "TRACE — Earth System Field Atlas",
+  "version": "2.1.0",
+  "release": "wilaya-layers-v2.1",
+  "entrypoint": "npm start",
+  "development": "npm ci && npm run dev",
+  "backend": "Same-origin read-only Node API backed by the supplied prepared archive; not live NASA ingestion",
+  "preparationVersion": "trace-prep-2",
+  "dataSHA256": "3bca495d24885fe8f4c293844854147382f90860a85f64d291992c2d1aa08fc6",
+  "archive": {
+    "sourceFiles": 5,
+    "sourceVariables": 20,
+    "monthlyRows": 57816,
+    "regions": 6,
+    "retainedMetrics": 28,
+    "views": 1620
+  },
+  "interface": {
+    "primaryVariables": [
+      {
+        "id": "T2M",
+        "label": "Temperature",
+        "subtitle": "Air temperature at 2 m",
+        "icon": "thermometer",
+        "color": "#a84638",
+        "code": "T2M"
+      },
+      {
+        "id": "VPD_kpa",
+        "label": "Air drying",
+        "subtitle": "Vapor-pressure deficit",
+        "icon": "wind",
+        "color": "#b77932",
+        "code": "VPD · kPa"
+      },
+      {
+        "id": "P_minus_E",
+        "label": "Water balance",
+        "subtitle": "Rainfall minus evaporation",
+        "icon": "droplets",
+        "color": "#307d86",
+        "code": "P − E"
+      },
+      {
+        "id": "PRECTOTCORR_m2",
+        "label": "Rainfall · model",
+        "subtitle": "MERRA-2 precipitation",
+        "icon": "cloud-rain",
+        "color": "#477b9a",
+        "code": "PRECTOTCORR"
+      },
+      {
+        "id": "PRECIP_gpm",
+        "label": "Rainfall · satellite",
+        "subtitle": "GPM / IMERG · from 2001",
+        "icon": "satellite",
+        "color": "#6d6aab",
+        "code": "PRECIP GPM"
+      },
+      {
+        "id": "SWGDN",
+        "label": "Solar energy",
+        "subtitle": "Downward surface shortwave",
+        "icon": "sun",
+        "color": "#ab7d24",
+        "code": "SOLAR"
+      },
+      {
+        "id": "AOD_total",
+        "label": "Clarity clue",
+        "subtitle": "Aerosol optical depth · lower = less extinction",
+        "icon": "haze",
+        "color": "#6d8878",
+        "code": "AOD · CLARITY"
+      }
+    ],
+    "caseIds": [
+      "HEAT_DRYING",
+      "HEAT_RAIN",
+      "HEAT_DRY_RAIN",
+      "RAIN_GAP",
+      "CLEAR_SOLAR",
+      "HOT_WATER"
+    ],
+    "analysisTypes": [
+      "series",
+      "cycle",
+      "stripes",
+      "compare",
+      "relationships"
+    ]
+  },
+  "build": {
+    "included": true,
+    "entrypoint": "/assets/index-DEe74de9.js",
+    "entrypointSHA256": "990ec053b02c0fb63537f64428d78320808a3dbd9f3dc1da0585d048de78d593",
+    "indexSHA256": "3a8b9c793909352247d9c99957d0c20ae3039392d8dc770c8c60b6513219a5dd",
+    "nodeRuntimeTested": "20.20.2",
+    "browserTested": "159.0.8154.6"
+  },
+  "validation": {
+    "dataChecks": {
+      "passed": 25,
+      "total": 25
+    },
+    "apiEndpointSubtests": {
+      "passed": 11,
+      "total": 11,
+      "nodeTotalIncludingEnclosingGroup": 12
+    },
+    "coreProductionBrowserChecks": {
+      "passed": 20,
+      "total": 20,
+      "pageErrors": []
+    },
+    "extendedProductionBrowserChecks": {
+      "passed": 30,
+      "total": 30,
+      "pageErrors": []
+    },
+    "productionHTTP": {
+      "passed": 16,
+      "total": 16
+    },
+    "desktopSmoke": {
+      "passed": true,
+      "viewport": "1440x900",
+      "mapCanvasFraction": 0.9355555555555556,
+      "visibleLabels": 6,
+      "realDisplayAreas": 6,
+      "terrainReady": true,
+      "tilesLoaded": true,
+      "logs": []
+    },
+    "freshMobileSmoke": {
+      "passed": true,
+      "viewport": "390x844",
+      "mapCanvasFraction": 0.9360189573459715,
+      "visibleLabels": 6,
+      "realDisplayAreas": 6,
+      "terrainReady": true,
+      "tilesLoaded": true,
+      "logs": []
+    },
+    "liveTerrainContext": {
+      "passed": true,
+      "samples": 9,
+      "verticalExaggeration": 1,
+      "renderedLevels": [
+        5,
+        8,
+        9
+      ]
+    },
+    "isolatedIncludedBuild": {
+      "passed": 16,
+      "total": 16,
+      "nodeModulesInstalled": false
+    },
+    "wilayaLayerProductionBrowserChecks": {
+      "passed": 21,
+      "total": 21,
+      "pageErrors": []
+    }
+  },
+  "validationReference": "docs/QA.md",
+  "scopeCaveats": [
+    "Six real 2017 historical wilaya polygons are administrative display proxies, not verified extraction footprints, point samples, proof of whole-wilaya climate coverage or current legal certification.",
+    "No climate interpolation, reconstruction from a PNG, future scenarios or live NASA ingestion.",
+    "Classical trend inference is not corrected for temporal dependence; threshold-event diagnostics are exploratory.",
+    "External terrain/imagery checks are not independent elevation validation or provider-availability certification.",
+    "Upstream collection/processing provenance and data redistribution rights need review."
+  ],
+  "githubRemote": "Not created or published; owner authentication, visibility and permission review remain required",
+  "localGit": "No .git directory in restored handoff workspace or ZIP; no commit or remote publication performed",
+  "buildIncluded": true,
+  "privateCredentialsIncluded": false,
+  "packaging": "scripts/package_release.py: explicit source/build/current-QA allowlist; per-entry CRC and SHA-256 checks; sibling ZIP checksum",
+  "regionalDisplay": {
+    "role": "Administrative display areas only",
+    "source": "geoBoundaries DZA ADM1, OpenStreetMap contributors / Wambacher",
+    "boundaryID": "DZA-ADM1-43142294",
+    "boundaryYearRepresented": 2017,
+    "sourceUnitCount": 48,
+    "currentLegalBoundariesClaimed": false,
+    "license": "Open Data Commons Open Database License 1.0 (ODbL-1.0)",
+    "licenseURL": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors; geoBoundaries / William & Mary geoLab; Wambacher",
+    "sourceSHA256": "99c13937ec0ce1d937815999b6b546c5ab1912dc5924c6c798c5e11b617feac8",
+    "displaySHA256": "d0ee10afa3b4c36b567a4aeeb3c960aab9873e3f07d58923ede0bbc8e03ec2e0",
+    "changes": "Six named features selected; record IDs, bounds and interior label points added. Upstream simplified coordinates and polygon holes are unchanged. No additional simplification or spatial interpolation.",
+    "caveat": "Fixed 2017, 48-unit administrative snapshot; boundaries are not time-varying, current legal certification, or the sampling geometry of the 1984–2024 climate records. Uniform area color repeats one regional summary; texture identifies the layer and is not within-region climate detail.",
+    "selectedFeatureCount": 6,
+    "geometryURL": "/data/study-wilayas.geojson",
+    "metadataURL": "/data/wilaya-display-metadata.json",
+    "textures": {
+      "HEAT_DRYING": {
+        "pattern": "diagonal",
+        "name": "Heat + dry air",
+        "texture": "Thermal diagonals",
+        "palette": 0
+      },
+      "HEAT_RAIN": {
+        "pattern": "stipple",
+        "name": "Heat + rainfall shortfall",
+        "texture": "Rainfall stipple",
+        "palette": 4
+      },
+      "HEAT_DRY_RAIN": {
+        "pattern": "crosshatch",
+        "name": "Heat, dry air + low rain",
+        "texture": "Three-clue crosshatch",
+        "palette": 2
+      },
+      "RAIN_GAP": {
+        "pattern": "paired",
+        "name": "Two rainfall stories",
+        "texture": "Paired rainfall bands",
+        "palette": 1
+      },
+      "CLEAR_SOLAR": {
+        "pattern": "solar",
+        "name": "Bright + low-aerosol months",
+        "texture": "Solar lattice",
+        "palette": 3
+      },
+      "HOT_WATER": {
+        "pattern": "waves",
+        "name": "Heat + water-balance shortfall",
+        "texture": "Water-balance waves",
+        "palette": 5
+      }
+    }
+  },
+  "scientificRegression": {
+    "numericalDataAndDefinitionsUnchangedFromV2": true,
+    "evidence": "analysis/geography-data-regression.json",
+    "payloadChange": "Display-geography source/limitation metadata only"
+  }
+}

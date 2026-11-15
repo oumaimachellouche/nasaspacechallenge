@@ -1,0 +1,127 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "browser": "chromium",
+  "checks": [
+    {
+      "name": "frontend health describes seven clues, six combinations and archive-only API connectivity",
+      "passed": true
+    },
+    {
+      "name": "terrain, imagery, label and opacity controls change real map state and survive panel reopen",
+      "passed": true
+    },
+    {
+      "name": "the stronger-trend filter hides precisely the unsupported full-period temperature record",
+      "passed": true
+    },
+    {
+      "name": "palette changes affect both the map legend and the actual Cesium site colors",
+      "passed": true
+    },
+    {
+      "name": "Cesium zoom and Fit Algeria controls actually change and restore the camera",
+      "passed": true
+    },
+    {
+      "name": "the terrain-tilt control changes camera pitch and returns to top-down without a fake terrain mesh",
+      "passed": true
+    },
+    {
+      "name": "reset north restores the real Cesium heading",
+      "passed": true
+    },
+    {
+      "name": "Fly to area fits its real administrative display boundary, without claiming an extraction footprint",
+      "passed": true
+    },
+    {
+      "name": "2D / 3D is a true Cesium scene morph and disables inapplicable tilt in 2D",
+      "passed": true
+    },
+    {
+      "name": "the geographic probe reports the clicked WGS84 coordinate without fabricating a climate pixel",
+      "passed": true
+    },
+    {
+      "name": "two clicked positions produce a genuine WGS84 geodesic measurement, and Escape removes it",
+      "passed": true
+    },
+    {
+      "name": "analysis windows move by keyboard and pointer and resize with their own chart canvas",
+      "passed": true
+    },
+    {
+      "name": "expand, minimize, tray and dock restore the same window instead of creating hidden duplicates",
+      "passed": true
+    },
+    {
+      "name": "each chart CSV downloads its own native/plotted calculation with units and correct row counts",
+      "passed": true
+    },
+    {
+      "name": "all five high-resolution PNG exports include non-empty figures with a valid PNG encoding",
+      "passed": true
+    },
+    {
+      "name": "collecting the five chart types stores distinct, frozen, type-specific evidence cards",
+      "passed": true
+    },
+    {
+      "name": "compound analysis JSON retains the actual monthly thresholds, source hashes and recomputed test family",
+      "passed": true
+    },
+    {
+      "name": "board sorting supports type, clue, region and newest; arrow reordering persists the visible order",
+      "passed": true
+    },
+    {
+      "name": "evidence cards can also be reordered by actual drag and drop",
+      "passed": true
+    },
+    {
+      "name": "board JSON exports notes and frozen numerical evidence but deliberately omits preview images",
+      "passed": true
+    },
+    {
+      "name": "selection sharing restores the Time lens while excluding private notes and evidence-board contents",
+      "passed": true
+    },
+    {
+      "name": "a closed window disposes only its own ECharts instance",
+      "passed": true
+    },
+    {
+      "name": "mobile and short-screen layouts keep map, popups, board sorting and PNG export accessible",
+      "passed": true
+    },
+    {
+      "name": "a page reload preserves manual board order, private notes and the selected sort mode",
+      "passed": true
+    },
+    {
+      "name": "a static deployment falls back from a missing API and labels the local archive honestly",
+      "passed": true
+    },
+    {
+      "name": "blocked remote imagery/elevation retain the real local basemap and an explicitly labelled ellipsoid",
+      "passed": true
+    },
+    {
+      "name": "disabled WebGL uses the geographic 2D fallback and disables unsupported camera tools",
+      "passed": true
+    },
+    {
+      "name": "a missing Cesium SDK still permits CSV-backed charts and accessible regional selection",
+      "passed": true
+    },
+    {
+      "name": "unavailable browser storage gives an explicit in-memory warning while evidence remains exportable",
+      "passed": true
+    },
+    {
+      "name": "missing API and static data leave a useful visible startup error, not a fabricated empty atlas",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,40 @@
+
+> trace-earth-system-atlas@2.1.0 test:extended
+> node scripts/extended-check.mjs
+
+PASS frontend health describes seven clues, six combinations and archive-only API connectivity
+PASS terrain, imagery, label and opacity controls change real map state and survive panel reopen
+PASS the stronger-trend filter hides precisely the unsupported full-period temperature record
+PASS palette changes affect both the map legend and the actual Cesium site colors
+PASS Cesium zoom and Fit Algeria controls actually change and restore the camera
+PASS the terrain-tilt control changes camera pitch and returns to top-down without a fake terrain mesh
+PASS reset north restores the real Cesium heading
+PASS Fly to area fits its real administrative display boundary, without claiming an extraction footprint
+PASS 2D / 3D is a true Cesium scene morph and disables inapplicable tilt in 2D
+PASS the geographic probe reports the clicked WGS84 coordinate without fabricating a climate pixel
+PASS two clicked positions produce a genuine WGS84 geodesic measurement, and Escape removes it
+PASS analysis windows move by keyboard and pointer and resize with their own chart canvas
+PASS expand, minimize, tray and dock restore the same window instead of creating hidden duplicates
+PASS each chart CSV downloads its own native/plotted calculation with units and correct row counts
+  PNG series 322ms 245765 bytes
+  PNG cycle 200ms 202947 bytes
+  PNG stripes 144ms 146436 bytes
+  PNG compare 169ms 182058 bytes
+  PNG relationships 198ms 202275 bytes
+PASS all five high-resolution PNG exports include non-empty figures with a valid PNG encoding
+PASS collecting the five chart types stores distinct, frozen, type-specific evidence cards
+PASS compound analysis JSON retains the actual monthly thresholds, source hashes and recomputed test family
+PASS board sorting supports type, clue, region and newest; arrow reordering persists the visible order
+PASS evidence cards can also be reordered by actual drag and drop
+PASS board JSON exports notes and frozen numerical evidence but deliberately omits preview images
+PASS selection sharing restores the Time lens while excluding private notes and evidence-board contents
+PASS a closed window disposes only its own ECharts instance
+PASS mobile and short-screen layouts keep map, popups, board sorting and PNG export accessible
+PASS a page reload preserves manual board order, private notes and the selected sort mode
+PASS a static deployment falls back from a missing API and labels the local archive honestly
+PASS blocked remote imagery/elevation retain the real local basemap and an explicitly labelled ellipsoid
+PASS disabled WebGL uses the geographic 2D fallback and disables unsupported camera tools
+PASS a missing Cesium SDK still permits CSV-backed charts and accessible regional selection
+PASS unavailable browser storage gives an explicit in-memory warning while evidence remains exportable
+PASS missing API and static data leave a useful visible startup error, not a fabricated empty atlas
+SUMMARY 30/30 page errors: []

@@ -1,0 +1,16 @@
+PASS included build has no node_modules
+PASS Node starts the included production service without dependency installation
+PASS included app HTML returns 200
+PASS included resource /cesium/Cesium.js
+PASS included resource /cesium/Workers/createTaskProcessorWorker.js
+PASS included resource /assets/index-DEe74de9.js
+PASS included resource /assets/index-Cgn5kc-6.css
+PASS included resource /data/study-wilayas.geojson
+PASS included resource /data/wilaya-display-metadata.json
+PASS included resource /data/geography/geoBoundaries-DZA-ADM1-2017.geojson
+PASS included resource /licenses/geoBoundaries-ODbL-1.0.txt
+PASS included API identifies the exact v2.1 prepared archive
+PASS included static archive matches the tested API archive
+PASS included server preserves 404 for /.env
+PASS included server preserves 404 for /api/missing
+PASS included server preserves 404 for /missing.png

@@ -1,0 +1,71 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "base": "http://127.0.0.1:5173/",
+  "passed": true,
+  "state": {
+    "provider": "Esri ArcGIS elevation",
+    "terrainReady": true,
+    "terrainTilesLoaded": true,
+    "frame": 51,
+    "renderedLevels": [
+      5,
+      8,
+      9
+    ],
+    "projection": "3D",
+    "imagery": "nasa",
+    "verticalExaggeration": 1,
+    "cameraPitchDegrees": -35.440655664965135,
+    "cameraHeightMetres": 34603.905407745486,
+    "sampleLevel": 10,
+    "samples": [
+      {
+        "lon": 5.5,
+        "lat": 23.1,
+        "heightMetres": 1752.2880654657688
+      },
+      {
+        "lon": 5.7,
+        "lat": 23.1,
+        "heightMetres": 1976.4096084621356
+      },
+      {
+        "lon": 5.9,
+        "lat": 23.1,
+        "heightMetres": 1614.6728037662626
+      },
+      {
+        "lon": 5.5,
+        "lat": 23.3,
+        "heightMetres": 2039.4915295873775
+      },
+      {
+        "lon": 5.7,
+        "lat": 23.3,
+        "heightMetres": 2366.168131652097
+      },
+      {
+        "lon": 5.9,
+        "lat": 23.3,
+        "heightMetres": 2356.81902848788
+      },
+      {
+        "lon": 5.5,
+        "lat": 23.5,
+        "heightMetres": 1441.429429505758
+      },
+      {
+        "lon": 5.7,
+        "lat": 23.5,
+        "heightMetres": 1682.2412803713676
+      },
+      {
+        "lon": 5.9,
+        "lat": 23.5,
+        "heightMetres": 2049.3286573263786
+      }
+    ],
+    "caution": "External-provider geometric context; approximate sampled elevations, not survey validation or the resolution/footprint of the climate archive."
+  },
+  "errors": []
+}

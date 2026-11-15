@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "role": "Administrative display areas only",
+  "userDecision": "Use real wilaya boundaries as clearly labelled display proxies, not verified extraction footprints",
+  "source": "geoBoundaries DZA ADM1, OpenStreetMap contributors / Wambacher",
+  "sourcePage": "https://www.geoboundaries.org/api/current/gbOpen/DZA/ADM1/",
+  "pinnedDownloadURL": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbOpen/DZA/ADM1/geoBoundaries-DZA-ADM1_simplified.geojson",
+  "boundaryID": "DZA-ADM1-43142294",
+  "boundaryYearRepresented": 2017,
+  "sourceUnitCount": 48,
+  "currentLegalBoundariesClaimed": false,
+  "license": "Open Data Commons Open Database License 1.0 (ODbL-1.0)",
+  "licenseURL": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap contributors; geoBoundaries / William & Mary geoLab; Wambacher",
+  "changes": "Six named features selected; record IDs, bounds and interior label points added. Upstream simplified coordinates and polygon holes are unchanged. No additional simplification or spatial interpolation.",
+  "sourceSHA256": "99c13937ec0ce1d937815999b6b546c5ab1912dc5924c6c798c5e11b617feac8",
+  "displaySHA256": "d0ee10afa3b4c36b567a4aeeb3c960aab9873e3f07d58923ede0bbc8e03ec2e0",
+  "upstreamSourceURL": "/data/geography/geoBoundaries-DZA-ADM1-2017.geojson",
+  "displayURL": "/data/study-wilayas.geojson",
+  "regions": [
+    {
+      "record": "Oran_West",
+      "wilaya": "Oran",
+      "shapeID": "43142294B89431929839902",
+      "labelPoint": [
+        -0.530747,
+        35.632855
+      ],
+      "bounds": [
+        -1.0615437,
+        35.3335035,
+        -0.113693,
+        35.9091804
+      ]
+    },
+    {
+      "record": "Annaba_East",
+      "wilaya": "Annaba",
+      "shapeID": "43142294B62233719624556",
+      "labelPoint": [
+        7.568223,
+        36.834169
+      ],
+      "bounds": [
+        7.284474644445099,
+        36.602898,
+        7.830145,
+        37.08471289016166
+      ]
+    },
+    {
+      "record": "Setif_Highlands",
+      "wilaya": "Sétif",
+      "shapeID": "43142294B67344016857851",
+      "labelPoint": [
+        5.559468,
+        36.164543
+      ],
+      "bounds": [
+        4.7296445,
+        35.6151215,
+        6.026243,
+        36.596231
+      ]
+    },
+    {
+      "record": "Djelfa_Steppe",
+      "wilaya": "Djelfa",
+      "shapeID": "43142294B74351585751074",
+      "labelPoint": [
+        2.993867,
+        34.759769
+      ],
+      "bounds": [
+        2.012714,
+        32.852914,
+        5.078817,
+        35.832375
+      ]
+    },
+    {
+      "record": "Ouargla_Sahara",
+      "wilaya": "Ouargla",
+      "shapeID": "43142294B70824426814000",
+      "labelPoint": [
+        5.846537,
+        31.338661
+      ],
+      "bounds": [
+        2.996532,
+        28.498373,
+        9.473817,
+        33.9604653
+      ]
+    },
+    {
+      "record": "Tamanrasset_Hoggar",
+      "wilaya": "Tamanrasset",
+      "shapeID": "43142294B23379165901565",
+      "labelPoint": [
+        4.668034,
+        22.852601
+      ],
+      "bounds": [
+        0.933021,
+        18.968147,
+        10.270553,
+        29.758296
+      ]
+    }
+  ],
+  "caveat": "Fixed 2017, 48-unit administrative snapshot; boundaries are not time-varying, current legal certification, or the sampling geometry of the 1984–2024 climate records. Uniform area color repeats one regional summary; texture identifies the layer and is not within-region climate detail."
+}

@@ -1,0 +1,40 @@
+{
+  "name": "trace-earth-system-atlas",
+  "version": "2.1.0",
+  "private": true,
+  "description": "TRACE: a map-first CesiumJS field atlas with seven Earth-system clues, six transparent combinations and independent collectable analysis windows.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "data:prepare": "python scripts/prepare_data.py",
+    "test": "node scripts/functional-check.mjs",
+    "start": "node server/serve.mjs",
+    "test:api": "node --test scripts/api.test.mjs",
+    "test:data": "node --test scripts/data.test.mjs scripts/boundary.test.mjs",
+    "test:extended": "node scripts/extended-check.mjs",
+    "test:smoke": "node scripts/smoke-all.mjs",
+    "test:layers": "node scripts/layers-check.mjs",
+    "geometry:prepare": "python scripts/prepare_boundaries.py"
+  },
+  "dependencies": {
+    "@fontsource/lato": "^5.2.0",
+    "@fontsource/ibm-plex-mono": "^5.2.0",
+    "cesium": "1.133.0",
+    "echarts": "^6.0.0",
+    "gsap": "^3.13.0",
+    "lucide": "^0.468.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.4.0",
+    "vite-plugin-static-copy": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

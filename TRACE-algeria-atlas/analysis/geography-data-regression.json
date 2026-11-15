@@ -1,0 +1,14 @@
+{
+  "comparedTo": "delivered v2.0 archive",
+  "unchangedNumericalAndDefinitionFields": {
+    "views": true,
+    "monthly": true,
+    "recipes": true,
+    "interface": true,
+    "compoundThresholds": true,
+    "hotDryThresholds": true,
+    "providedRelationships": true
+  },
+  "newPreparedSHA256": "3bca495d24885fe8f4c293844854147382f90860a85f64d291992c2d1aa08fc6",
+  "onlyChange": "Geographic provenance/limitation metadata; no numerical climate record, threshold, slope, interval or significance value changed."
+}

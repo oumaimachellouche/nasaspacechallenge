@@ -1,0 +1,12 @@
+
+> trace-earth-system-atlas@2.1.0 geometry:prepare
+> python scripts/prepare_boundaries.py
+
+{
+  "features": 6,
+  "sourceUnits": 48,
+  "boundaryYear": 2017,
+  "vertices": 3205,
+  "bytes": 72459,
+  "sha256": "d0ee10afa3b4c36b567a4aeeb3c960aab9873e3f07d58923ede0bbc8e03ec2e0"
+}

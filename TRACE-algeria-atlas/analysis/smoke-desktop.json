@@ -1,0 +1,196 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "base": "http://127.0.0.1:5173/",
+  "browser": "159.0.8154.6",
+  "passed": true,
+  "state": {
+    "ready": true,
+    "fallback": false,
+    "terrainReady": true,
+    "tilesLoaded": true,
+    "renderedTiles": 5,
+    "frames": 38,
+    "projection": "3D",
+    "imagery": "nasa",
+    "points": 6,
+    "visiblePoints": 6,
+    "status": "CESIUMJS · ESRI ELEVATION",
+    "areaLayer": {
+      "status": "ready",
+      "error": null,
+      "source": "geoBoundaries / OpenStreetMap · 2017 snapshot",
+      "geometryRole": "Administrative display proxy only; extraction footprints unconfirmed",
+      "areaCount": 6,
+      "partCount": 6,
+      "texturesAvailable": true,
+      "regions": true,
+      "textures": true,
+      "fillOpacity": 0.58,
+      "textureName": "Solid regional fill",
+      "style": "solid",
+      "hovered": null,
+      "records": [
+        {
+          "region": "Oran_West",
+          "name": "Oran",
+          "wilaya": "Oran",
+          "value": 0.301978356,
+          "color": "#d8a277",
+          "visible": true,
+          "formatted": "+0.302 °C / 10 yr",
+          "supported": true,
+          "label": "Temperature",
+          "quantity": "trend",
+          "pattern": "solid",
+          "labelPoint": [
+            -0.530747,
+            35.632855
+          ],
+          "bounds": [
+            -1.0615437,
+            35.3335035,
+            -0.113693,
+            35.9091804
+          ],
+          "entityIds": [
+            "Oran_West"
+          ]
+        },
+        {
+          "region": "Annaba_East",
+          "name": "Annaba",
+          "wilaya": "Annaba",
+          "value": 0.2494106701,
+          "color": "#e9c7a0",
+          "visible": true,
+          "formatted": "+0.249 °C / 10 yr",
+          "supported": false,
+          "label": "Temperature",
+          "quantity": "trend",
+          "pattern": "solid",
+          "labelPoint": [
+            7.568223,
+            36.834169
+          ],
+          "bounds": [
+            7.284474644445099,
+            36.602898,
+            7.830145,
+            37.08471289016166
+          ],
+          "entityIds": [
+            "Annaba_East"
+          ]
+        },
+        {
+          "region": "Setif_Highlands",
+          "name": "Sétif",
+          "wilaya": "Sétif",
+          "value": 0.2961977306,
+          "color": "#daa67b",
+          "visible": true,
+          "formatted": "+0.296 °C / 10 yr",
+          "supported": true,
+          "label": "Temperature",
+          "quantity": "trend",
+          "pattern": "solid",
+          "labelPoint": [
+            5.559468,
+            36.164543
+          ],
+          "bounds": [
+            4.7296445,
+            35.6151215,
+            6.026243,
+            36.596231
+          ],
+          "entityIds": [
+            "Setif_Highlands"
+          ]
+        },
+        {
+          "region": "Djelfa_Steppe",
+          "name": "Djelfa",
+          "wilaya": "Djelfa",
+          "value": 0.3660478451,
+          "color": "#bd7456",
+          "visible": true,
+          "formatted": "+0.366 °C / 10 yr",
+          "supported": true,
+          "label": "Temperature",
+          "quantity": "trend",
+          "pattern": "solid",
+          "labelPoint": [
+            2.993867,
+            34.759769
+          ],
+          "bounds": [
+            2.012714,
+            32.852914,
+            5.078817,
+            35.832375
+          ],
+          "entityIds": [
+            "Djelfa_Steppe"
+          ]
+        },
+        {
+          "region": "Ouargla_Sahara",
+          "name": "Ouargla",
+          "wilaya": "Ouargla",
+          "value": 0.4178887589,
+          "color": "#a34d48",
+          "visible": true,
+          "formatted": "+0.418 °C / 10 yr",
+          "supported": true,
+          "label": "Temperature",
+          "quantity": "trend",
+          "pattern": "solid",
+          "labelPoint": [
+            5.846537,
+            31.338661
+          ],
+          "bounds": [
+            2.996532,
+            28.498373,
+            9.473817,
+            33.9604653
+          ],
+          "entityIds": [
+            "Ouargla_Sahara"
+          ]
+        },
+        {
+          "region": "Tamanrasset_Hoggar",
+          "name": "Tamanrasset",
+          "wilaya": "Tamanrasset",
+          "value": 0.33799529359999997,
+          "color": "#cc895d",
+          "visible": true,
+          "formatted": "+0.338 °C / 10 yr",
+          "supported": true,
+          "label": "Temperature",
+          "quantity": "trend",
+          "pattern": "solid",
+          "labelPoint": [
+            4.668034,
+            22.852601
+          ],
+          "bounds": [
+            0.933021,
+            18.968147,
+            10.270553,
+            29.758296
+          ],
+          "entityIds": [
+            "Tamanrasset_Hoggar"
+          ]
+        }
+      ]
+    },
+    "mapAreaFraction": 0.9355555555555556,
+    "bodyWidth": 1440,
+    "viewport": 1440
+  },
+  "logs": []
+}

@@ -1,0 +1,25 @@
+
+> trace-earth-system-atlas@2.1.0 test
+> node scripts/functional-check.mjs
+
+PASS the real Cesium map occupies at least 80% of the screen, without a fixed sidebar
+PASS the selected Oran record reproduces the supplied rate, uncertainty rule and q value
+PASS the clue picker exposes exactly the seven agreed concepts and their beginner labels
+PASS every curated primary clue changes the mapped quantity; archived choices cannot be selected
+PASS IMERG automatically uses its actual overlap and complete winters contain 23 values
+PASS the unified Time lens retains whole-year calculations as well as complete seasons
+PASS all six two/three-input combinations map actual event frequencies or a physical product difference
+PASS combination help exposes the real formula, fixed reference and exact threshold table
+PASS all five analysis types exist simultaneously as independently rendered popup windows
+PASS following and duplicated/frozen windows keep genuinely independent selections
+PASS anomalies subtract the stated reference rather than rescaling the observations
+PASS regional comparison bars include zero and retain each region’s 95% slope interval
+PASS a climate stripe can inspect its actual year on the map and has a numerical anomaly legend
+PASS relationship selectors are restricted, and detrending changes the actual paired association
+PASS a relationship containing IMERG is paired only over 2001–2024
+PASS collecting chart-specific snapshots prevents exact duplicates and preserves context
+PASS evidence notes persist locally with a frozen calculation, source hashes and honest units
+PASS a reload retains the evidence board and reopening a saved card freezes its original selection
+PASS year playback advances real values and pauses without changing annual logic
+PASS mobile keeps a map-first viewport and usable chart, Time lens and evidence controls
+SUMMARY 20/20 page errors: []

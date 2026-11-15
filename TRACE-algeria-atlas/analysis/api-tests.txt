@@ -1,0 +1,75 @@
+
+> trace-earth-system-atlas@2.1.0 test:api
+> node --test scripts/api.test.mjs
+
+TAP version 13
+# Subtest: TRACE read-only data API
+    # Subtest: health discloses the archive mode, not a live NASA connection
+    ok 1 - health discloses the archive mode, not a live NASA connection
+      ---
+      duration_ms: 547.763096
+      ...
+    # Subtest: catalog contains six sites, a retained archive and the seven-clue/six-combination interface
+    ok 2 - catalog contains six sites, a retained archive and the seven-clue/six-combination interface
+      ---
+      duration_ms: 63.800984
+      ...
+    # Subtest: full bundle is compressed, cacheable and conditional
+    ok 3 - full bundle is compressed, cacheable and conditional
+      ---
+      duration_ms: 442.440725
+      ...
+    # Subtest: a selected view preserves source statistics and per-year units
+    ok 4 - a selected view preserves source statistics and per-year units
+      ---
+      duration_ms: 6.167518
+      ...
+    # Subtest: IMERG cannot be queried as a fictional 41-year view
+    ok 5 - IMERG cannot be queried as a fictional 41-year view
+      ---
+      duration_ms: 14.330504
+      ...
+    # Subtest: compound views include formulas, the six-test family and actual monthly thresholds
+    ok 6 - compound views include formulas, the six-test family and actual monthly thresholds
+      ---
+      duration_ms: 5.228846
+      ...
+    # Subtest: paired rainfall difference is not extrapolated before 2001
+    ok 7 - paired rainfall difference is not extrapolated before 2001
+      ---
+      duration_ms: 6.582963
+      ...
+    # Subtest: CSV endpoint returns native rows and metadata, not displayed rounded values
+    ok 8 - CSV endpoint returns native rows and metadata, not displayed rounded values
+      ---
+      duration_ms: 5.273641
+      ...
+    # Subtest: monthly endpoint respects actual coverage and validates requested years
+    ok 9 - monthly endpoint respects actual coverage and validates requested years
+      ---
+      duration_ms: 5.926492
+      ...
+    # Subtest: invalid selectors, methods and routes return explicit JSON errors
+    ok 10 - invalid selectors, methods and routes return explicit JSON errors
+      ---
+      duration_ms: 8.185958
+      ...
+    # Subtest: HEAD returns metadata but no response body
+    ok 11 - HEAD returns metadata but no response body
+      ---
+      duration_ms: 6.823238
+      ...
+    1..11
+ok 1 - TRACE read-only data API
+  ---
+  duration_ms: 1127.031557
+  ...
+1..1
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1245.447755

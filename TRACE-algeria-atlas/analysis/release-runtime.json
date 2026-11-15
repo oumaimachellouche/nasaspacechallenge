@@ -1,0 +1,72 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "target": "Isolated included production build, no installed dependencies",
+  "runtime": "v20.20.2",
+  "passed": true,
+  "checks": [
+    {
+      "name": "included build has no node_modules",
+      "passed": true
+    },
+    {
+      "name": "Node starts the included production service without dependency installation",
+      "passed": true
+    },
+    {
+      "name": "included app HTML returns 200",
+      "passed": true
+    },
+    {
+      "name": "included resource /cesium/Cesium.js",
+      "passed": true
+    },
+    {
+      "name": "included resource /cesium/Workers/createTaskProcessorWorker.js",
+      "passed": true
+    },
+    {
+      "name": "included resource /assets/index-DEe74de9.js",
+      "passed": true
+    },
+    {
+      "name": "included resource /assets/index-Cgn5kc-6.css",
+      "passed": true
+    },
+    {
+      "name": "included resource /data/study-wilayas.geojson",
+      "passed": true
+    },
+    {
+      "name": "included resource /data/wilaya-display-metadata.json",
+      "passed": true
+    },
+    {
+      "name": "included resource /data/geography/geoBoundaries-DZA-ADM1-2017.geojson",
+      "passed": true
+    },
+    {
+      "name": "included resource /licenses/geoBoundaries-ODbL-1.0.txt",
+      "passed": true
+    },
+    {
+      "name": "included API identifies the exact v2.1 prepared archive",
+      "passed": true
+    },
+    {
+      "name": "included static archive matches the tested API archive",
+      "passed": true
+    },
+    {
+      "name": "included server preserves 404 for /.env",
+      "passed": true
+    },
+    {
+      "name": "included server preserves 404 for /api/missing",
+      "passed": true
+    },
+    {
+      "name": "included server preserves 404 for /missing.png",
+      "passed": true
+    }
+  ]
+}

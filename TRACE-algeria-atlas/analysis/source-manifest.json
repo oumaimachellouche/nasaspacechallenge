@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "algeria_6regions_annual_wide.csv",
+    "sha256": "614df7d86c3606f85b407742167be7e6b87923e5c8c16a4dc00828dfc5a49a18",
+    "bytes": 98988,
+    "url": "/data/raw/algeria_6regions_annual_wide.csv"
+  },
+  {
+    "filename": "algeria_6regions_monthly_tidy.csv",
+    "sha256": "64b647fcc4653c8f2c717a8681e86964186bc58b9864066d0424f393417e005d",
+    "bytes": 5160613,
+    "url": "/data/raw/algeria_6regions_monthly_tidy.csv"
+  },
+  {
+    "filename": "step4_driver_attribution.csv",
+    "sha256": "8f4cc247d72f188366fef87ff82e50b3082692c6d677f073ac846f0509f89916",
+    "bytes": 4145,
+    "url": "/data/raw/step4_driver_attribution.csv"
+  },
+  {
+    "filename": "step4_master_trends_6x20.csv",
+    "sha256": "50bfb2a02355a026a36fe71536c5d3555def4462585904f8d4c4b6774d1ab796",
+    "bytes": 68467,
+    "url": "/data/raw/step4_master_trends_6x20.csv"
+  },
+  {
+    "filename": "step4_seasonal_trends.csv",
+    "sha256": "30001e4c27a66c186df3c82a44d7bcf9b8a74b82ab82d464afd7f44e87bb8232",
+    "bytes": 145268,
+    "url": "/data/raw/step4_seasonal_trends.csv"
+  }
+]

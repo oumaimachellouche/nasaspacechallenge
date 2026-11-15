@@ -1,0 +1,139 @@
+{
+  "release": "wilaya-layers-v2.1",
+  "base": "http://127.0.0.1:5173/",
+  "checks": [
+    {
+      "path": "/",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/cesium/Cesium.js",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/cesium/Workers/createTaskProcessorWorker.js",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/data/atlas.json",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "matchesLocalSHA256": true,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/api/catalog",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/api/view?region=Oran_West&variable=T2M",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/no-such-asset.png",
+      "method": "GET",
+      "expectedStatus": 404,
+      "status": 404,
+      "contentType": null,
+      "passed": true
+    },
+    {
+      "path": "/api/no-such-route",
+      "method": "GET",
+      "expectedStatus": 404,
+      "status": 404,
+      "contentType": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/.env",
+      "method": "GET",
+      "expectedStatus": 404,
+      "status": 404,
+      "contentType": null,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "method": "POST",
+      "expectedStatus": 405,
+      "status": 405,
+      "contentType": "application/json; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "/index.html",
+      "method": "POST",
+      "expectedStatus": 405,
+      "status": 405,
+      "contentType": null,
+      "passed": true
+    },
+    {
+      "path": "/data/study-wilayas.geojson",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/geo+json",
+      "matchesLocalSHA256": true,
+      "passed": true
+    },
+    {
+      "path": "/data/wilaya-display-metadata.json",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "matchesLocalSHA256": true,
+      "passed": true
+    },
+    {
+      "path": "/data/geography/geoBoundaries-DZA-ADM1-2017.geojson",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "application/geo+json",
+      "matchesLocalSHA256": true,
+      "passed": true
+    },
+    {
+      "path": "/licenses/geoBoundaries-ODbL-1.0.txt",
+      "method": "GET",
+      "expectedStatus": 200,
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "matchesLocalSHA256": true,
+      "passed": true
+    }
+  ]
+}
